@@ -29,7 +29,6 @@ h1,h3,p{
 
 .header{
    width:100%;
-   height: 9vh;
    display: flex;
    background-color: #0D9276;
    position:fixed;
@@ -263,7 +262,6 @@ h1,h3,p{
     .header{
       align-items: center;
       justify-content: center;
-      height: 20vh;
     }
     .header .img-container {
       flex-direction: column;
