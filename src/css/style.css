@@ -12,6 +12,10 @@
 }
 
 body{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
     background-color: #FFF6E9;
 }
 
@@ -110,14 +114,14 @@ h1,h3,p{
 }
 
 .hero .left .left-media {
-    text-align: center;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 1rem;
     justify-content: center;
 }
 
 .left-media img{
+    flex-direction: row;
     transition: all(0.3s);
 }
 
@@ -159,6 +163,11 @@ h1,h3,p{
     box-shadow:  -1px 3px rgb(155, 154, 154);
 }
 
+.form-container input::placeholder{
+    color:#40A2E3;
+}
+
+
 .form-container textarea {
     text-align: center;
     min-width:30%;
@@ -167,6 +176,10 @@ h1,h3,p{
     border-color: transparent;
     box-shadow:  -1px 3px rgb(155, 154, 154);
     box-sizing: content-box;
+}
+
+.form-container textarea::placeholder{
+    color:#40A2E3;
 }
 
 .btn-container{
@@ -231,16 +244,10 @@ h1,h3,p{
     }
 
     .hero {
-        padding-top:25% ;
         margin-left: 3%;
     }
 
-    .hero .left {
-        padding-top:15% ;
-    }
-
     .hero .left h1 {
-        padding-top: 20%;
         font-size: 15px;
     }
      .hero {
@@ -254,8 +261,8 @@ h1,h3,p{
         flex-direction: column;
      }
 
-     .hero .right{
-        margin-left: 10%;
+     .hero .right .right-media{
+        justify-content: center;
      }
 
      #contact-section h1{
@@ -287,7 +294,7 @@ h1,h3,p{
   }
 
   .hero {
-      padding-top:25% ;
+      padding-top:15% ;
       margin-left: 3%;
   }
 
@@ -312,6 +319,29 @@ h1,h3,p{
         font-size: 10px;
     }
 }
+
+@media  screen and (max-width:350px) {
+
+    .hero  {
+        padding-top: 25%;
+    }
+
+
+}
+
+@media  screen and (max-width:280px) {
+
+    .hero  {
+        padding-top: 25%;
+    }
+
+    .hero .right-media {
+        margin-left: -15%;
+    }
+
+
+}
+
 
 /***** End Media-Querys *****/
 
