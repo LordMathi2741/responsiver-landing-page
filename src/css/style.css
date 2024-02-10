@@ -238,7 +238,8 @@ h1,h3,p{
         padding-top:15% ;
     }
 
-    .hero .left h1, h3 {
+    .hero .left h1 {
+        padding-top: 20%;
         font-size: 15px;
     }
      .hero {
