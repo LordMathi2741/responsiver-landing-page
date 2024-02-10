@@ -244,6 +244,7 @@ h1,h3,p{
     }
 
     .hero {
+        padding-top: 30%;
         margin-left: 3%;
     }
 
@@ -320,26 +321,24 @@ h1,h3,p{
     }
 }
 
-@media  screen and (max-width:350px) {
+
+@media  screen and (max-width:320px) {
 
     .hero  {
         padding-top: 27%;
     }
 
+    .hero .right-media {
+        margin-left: -20%;
+    }
+
 
 }
 
-@media  screen and (max-width:280px) {
-
+@media screen and (max-width:450px){
     .hero  {
-        padding-top: 30%;
+        padding-top: 20%;
     }
-
-    .hero .right-media {
-        margin-left: -15%;
-    }
-
-
 }
 
 
